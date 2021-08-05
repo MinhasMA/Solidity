@@ -9,3 +9,4 @@ Setting up a user
 Requesting account balance
 Withdrawing funds 
 Transferring funds between banks
+Displaying error messages when insufficient funds are available
