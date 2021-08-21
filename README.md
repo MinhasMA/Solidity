@@ -1,4 +1,4 @@
-# Solidity
+# Solidity Setup
 
 Setting up this repo to practice solidity programming. The goal for this repo is to look at developing a variety of smart contracts in solidity across different use cases and verticals.
 
