@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity ^0.8.0;
 
 import "./ERC20.sol";
 import "./ERC20Burnable.sol";
@@ -12,7 +12,7 @@ contract KCSToken is ERC20, ERC20Burnable, Blacklistable {
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override {
-        super._beforeTokenTransfer(from, to, amount);
+        super._beforeTokenTdoiransfer(from, to, amount);
 
         require(!isBlacklisted(from), "ERC20WithSafeTransfer: invalid sender");
         require(!isBlacklisted(to), "ERC20WithSafeTransfer: invalid recipient");
@@ -20,7 +20,7 @@ contract KCSToken is ERC20, ERC20Burnable, Blacklistable {
 }
 
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.10;
 
 import "./Ownable.sol";
 
@@ -796,6 +796,5 @@ library SafeMath {
         return a % b;
     }
 }
-
 
 
